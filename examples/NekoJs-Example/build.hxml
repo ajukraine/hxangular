@@ -1,0 +1,10 @@
+-cp src
+-cp ../../src
+-js www/js/app.haxe.js
+-dce std
+-main client.App
+
+--next
+-cp src
+-neko www/app.n
+-main server.App
