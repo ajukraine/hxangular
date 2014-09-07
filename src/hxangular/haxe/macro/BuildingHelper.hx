@@ -16,7 +16,7 @@ class BuildingHelper
 	var localClass: ClassType;
 	public var fields(default, null): Array<Field>;
 	
-	public static function new()
+	public function new()
 	{
 		localClass = Context.getLocalClass().get();
 		fields = Context.getBuildFields();
