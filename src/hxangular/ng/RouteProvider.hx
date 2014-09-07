@@ -13,6 +13,7 @@ extern class RouteProvider
 
 typedef RouteMapping =
 {
+	? data: Dynamic,
 	? controller: Class<IController>,
 	? template: String,
 	? templateUrl: String,

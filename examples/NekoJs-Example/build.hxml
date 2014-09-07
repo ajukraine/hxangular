@@ -1,6 +1,8 @@
 -cp src
 -cp ../../src
 -js www/js/app.haxe.js
+-debug
+-D source-map-content
 -dce std
 -main client.App
 

@@ -1,23 +1,22 @@
 package client.controllers;
-import client.services.Navigation;
+import client.services.Help;
 import hxangular.haxe.IController;
 
 /**
- * ...
  * @author Bohdan Makohin
  */
 class HomeController implements IController
 {
-	@inject("$scope", "Navigation")
-	public function new (scope: HomeScope, navigation: Navigation)
+	@inject("$scope", "Help")
+	public function new (scope: HomeScope, help: Help)
 	{
 		scope.name = "Bohdan";
-		scope.menu = navigation.menuItems;
+		scope.help = help.get();
 	}
 }
 
 typedef HomeScope =
 {
 	name: String,
-	menu: Array<MenuItem>
+	help: HelpInfo
 }

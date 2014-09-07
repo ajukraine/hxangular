@@ -19,4 +19,5 @@ extern class Module
 	public function constant(name: String, object: Dynamic): Module;
 	public function controller(name: String, constructor: Class<IController>): Module;
 	public function service(name: String, constructor: Class<IService>): Module;
+	public function run(runFn: Dynamic): Module;
 }

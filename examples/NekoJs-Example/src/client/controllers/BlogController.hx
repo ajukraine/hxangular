@@ -19,8 +19,6 @@ class BlogController implements IController
 		{
 			scope.entries = entries;
 			scope.digest();
-			scope.digest();
-			scope.digest();
 		});
 	}
 }

@@ -15,7 +15,7 @@ class BlogService implements api.IBlogService
 		blogEntries =
 		[
 			{
-				title: "В Каннах победил синий цвет",
+				title: "В Каннах (but no) синий цвет (and yes)",
 				body:
 				{
 					paragraphs:
